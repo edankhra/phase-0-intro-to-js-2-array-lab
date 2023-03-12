@@ -6,7 +6,6 @@ describe('index.js', function () {
       expect(cats).to.have.ordered.members(["Milo", "Otis", "Garfield"]);
     });
   });
-
   describe('Array functions', function () {
     beforeEach(function () {
       cats.length = 0;
@@ -14,6 +13,7 @@ describe('index.js', function () {
       cats.push('Milo', 'Otis', 'Garfield');
     });
 
+ 
     describe('destructivelyAppendCat(name)', function () {
       it('appends a cat to the end of the cats array', function () {
         destructivelyAppendCat('Ralph');
